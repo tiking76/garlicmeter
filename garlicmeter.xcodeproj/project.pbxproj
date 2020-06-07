@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -88,7 +88,6 @@
 				09AB3225DF702194B066DBAD /* Pods-garlicmeter.debug.xcconfig */,
 				42F6CFE892D45E3B46A3286A /* Pods-garlicmeter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
