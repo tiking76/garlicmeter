@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         TextLabel.text = "累計\(garlicCount)片"
 
 
@@ -40,6 +41,10 @@ class ViewController: UIViewController {
                     self.garlicCount = self.userDefaults.double(forKey: "garlicCount")
                     self.TextLabel.text = "累計\(self.garlicCount)片"
                     self.garlicCount = self.userDefaults.object(forKey: "garlicCount") as! Double
+                    if (self.garlicCount >= 6.0){
+                        self.garlicImage.image = UIImage(named: "garlic")
+                        self.view.addSubview(self.garlicImage)
+                    }
                 })
                 .disposed(by: disposeBeg)
 
@@ -51,6 +56,10 @@ class ViewController: UIViewController {
                     self.garlicCount = self.userDefaults.double(forKey: "garlicCount")
                     self.TextLabel.text = "累計\(self.garlicCount)片"
                     self.garlicCount = self.userDefaults.object(forKey: "garlicCount") as! Double
+                    if (self.garlicCount >= 6.0){
+                        self.garlicImage.image = UIImage(named: "garlic")
+                        self.view.addSubview(self.garlicImage)
+                    }
                 })
                 .disposed(by: disposeBeg)
 
@@ -62,8 +71,13 @@ class ViewController: UIViewController {
                     self.garlicCount = self.userDefaults.double(forKey: "garlicCount")
                     self.TextLabel.text = "累計\(self.garlicCount)片"
                     self.garlicCount = self.userDefaults.object(forKey: "garlicCount") as! Double
+                    if (self.garlicCount >= 6.0){
+                        self.garlicImage.image = UIImage(named: "garlic")
+                        self.view.addSubview(self.garlicImage)
+                    }
                 })
                 .disposed(by: disposeBeg)
     }
+    
 }
 
